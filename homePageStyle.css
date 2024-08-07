@@ -52,10 +52,18 @@ body {
     height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
-.hero h1,
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 .hero p {
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -211,3 +219,107 @@ body {
         margin-top: 10px;
     }
 } */
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 60vh;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar > .container-fluid {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 60px); /* Adjust as needed */
+    }
+
+    .navbar-brand img {
+        width: 45px;
+        height: 50px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.875rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+        max-width: calc(100% - 50px); /* Adjust as needed */
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 44px;
+        margin-right: 6px;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.75rem;
+    }
+}
+
+/* Ensure the hero image scales properly */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
