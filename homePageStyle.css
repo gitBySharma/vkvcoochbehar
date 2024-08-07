@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #FF7722;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFA07A;
+    --dark-color: #2C3E50;
+    --light-color: #F7F9F9;
+    --background-color: #FFF7E6;
+    --saffron-color: #FF9933;
+    --saffron-dark: #E68A00;
+    --saffron-light: #FFB366;
+    --gradient-color: #FF7722;
+    --gradient-light-color: #FFAA77;
+    --background-green: #138808;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://yogavani.info/wp-content/uploads/2021/06/Vivekananda-Rock-Memorial-Vivekananda-Kendra.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--light-color);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1,
+.hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.quote {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote1 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* .quote1 footer {
+    color: var(--primary-color);
+} */
+
+.programs h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #F7F9F9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--light-color);
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.gallery-section h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* .footer {
+    background-color: #138808;
+    color: white;
+} */
+
+/* footer */
+.footer-section {
+    background-color: var(--background-green);
+    color: #ffffff;
+}
+
+.footer-section h5 {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ffffff;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--saffron-dark);
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: var(--saffron-color);
+}
+
+.map-container {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom {
+    background-color: var(--background-green);
+    padding: 5px 0;
+}
+
+/* Ensure responsiveness */
+/* @media (max-width: 768px) {
+    .footer-bottom .text-md-end {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+} */
