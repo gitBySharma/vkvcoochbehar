@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #FF7722;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFA07A;
+    --dark-color: #2C3E50;
+    --light-color: #F7F9F9;
+    --background-color: #FFF7E6;
+    --saffron-color: #FF9933;
+    --saffron-dark: #E68A00;
+    --saffron-light: #FFB366;
+    --gradient-color: #FF7722;
+    --gradient-light-color: #FFAA77;
+    --background-green: #138808;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Ensure the hero image scales properly */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 60vh;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar>.container-fluid {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 60px);
+        /* Adjust as needed */
+    }
+
+    .navbar-brand img {
+        width: 45px;
+        height: 50px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.875rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+        max-width: calc(100% - 50px);
+        /* Adjust as needed */
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 44px;
+        margin-right: 6px;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.75rem;
+    }
+}
+
+/* footer */
+.footer-section {
+    background-color: var(--background-green);
+    color: #ffffff;
+}
+
+.footer-section h5 {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ffffff;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--saffron-dark);
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: var(--saffron-color);
+}
+
+.map-container {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom {
+    background-color: var(--background-green);
+    padding: 5px 0;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), no-repeat center center;
+    background-size: cover;
+    color: var(--light-color);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.quote {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 15px;
+}
+
+.quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+}
